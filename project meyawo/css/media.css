@@ -1,0 +1,35 @@
+@media(max-width:500px)
+{
+    .navbar .nav
+    {
+        display: none;
+    }
+    .navbar i
+    {
+        display: block;
+    }
+    .section .container .about .image-holder
+   {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 20px;
+ }
+.section .container .about .about-text 
+  {
+    font-family: 'Baloo Paaji 2',cursive;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .section .row .service-card
+  {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .section .row .portfolio-card
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+}

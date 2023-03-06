@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container
+   {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+.row
+   {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   }
+.btn
+   {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    background: transparent;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+.btn-primary
+   {
+    color: #fff;
+    background-color: #695aa6;
+    border-color: #695aa6;
+    cursor: pointer;
+   }
+.btn-primary:hover 
+   {
+    color: #fff;
+    background-color: #594c8d;
+    border-color: #544885;
+   }
+.common-p-h2 p
+   {
+    letter-spacing: .6px;
+    font-size: 1.2rem;
+    opacity: .6;
+    margin-bottom: 6px;
+   }
+.common-p-h2 h2 
+   {
+    font-size: 36px;
+    font-family: 'Baloo Paaji 2',cursive;
+    color: #695aa6;
+    font-weight: 800;
+    margin-bottom: 10px;
+   }
+.navbar
+   {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Baloo Paaji 2',cursive;
+    font-weight: 700;
+   }
+.navbar .container 
+   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: 100px;
+   }
+a
+   {
+    color: #695aa6;
+    text-decoration: none;
+    background-color: transparent;
+   }
+.navbar .logo
+   {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+   }
+.navbar .nav
+   {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    list-style: none;
+  }
+.navbar .nav .btn
+  {
+    padding: 10px;
+  }
+.navbar .nav .item a
+  {
+    margin: 0 10px;
+    color: #fff;
+  }
+.navbar .nav .item a:hover
+ {
+    color: #695aa6;
+ }
+ .navbar i{
+  font-size: large;
+  /* color: #fff; */
+  display: none;
+ }
+.header
+   {
+    background: url(../images/header.jpg);
+    background-size: cover; 
+    background-position: center ;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+.header .overlay
+   {
+    background:linear-gradient(to top,#fff 0,rgba(105,90,166,.35) 99%,rgba(105,90,166,.5) 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+header .header-content
+      {
+        flex-grow: 1;
+        margin-top: 20px;
+        max-width: 550px;
+        z-index: 3;
+
+       }
+header .header-content .header-title
+  {
+    font-size: 2.4rem;
+    opacity: .8;
+    color: #212529;
+  }
+header .header-content .header-title .up
+{
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px)/ (1300 - 300)));
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
+header .header-content .header-title .down
+  { 
+
+    font-size: calc(30px + (75 - 30) * ((100vw - 300px)/ (1300 - 300)));
+   }
+.header .header-content .header-subtitle 
+ {
+
+    font-size: calc(10px + (22 - 10) * ((100vw - 300px)/ (1300 - 300)));
+    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px)/ (1300 - 300)));
+    opacity: .8;
+    margin-bottom: 20px;
+ }
+.header .header-content .btn
+ {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 8px 15px;
+    border: none;
+ }
+.section
+  {
+    padding: 70px 10px;
+  }
+.section .container
+   {
+    text-align: center !important;
+  }
+.section .container .about
+  {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+.section .container .about .image-holder
+ {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-right: 20px;
+ }
+.section .container .about .about-text 
+  {
+    font-family: 'Baloo Paaji 2',cursive;
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+
+.section .container .about .about-text .bio
+  {
+    font-weight: 100;
+    font-size: 16px;
+    opacity: .8;
+    color: #111;
+    letter-spacing: .6px;
+    margin-bottom: 1rem;
+  }
+.section .container .about .about-text .btn
+   {
+    margin-top: 20px;
+    padding: 5px 15px;
+    background: transparent;
+    color: #695aa6;
+    border-color: #695aa6;  
+    border-radius: 100px;
+    transition: .3  s all ease;
+  }
+.section .container .about .about-text .btn:hover 
+  {
+    color: #fff;
+    background-color: #695aa6;
+    border-color: #695aa6;
+  }
+
+.section .row .service-card
+  {
+    position: relative;
+    min-height: 230px;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    transition: .5s all ease;
+    overflow: hidden;
+    flex: 0 0 22%;
+    max-width: 25%;
+  }
+.section .row .service-card .body
+  {
+    padding: 10px;
+    position: relative;
+    transition: .5s all ease;
+
+  }
+.section .row .service-card .body img
+  {
+    margin-top: 40px;
+    width: 55px;
+    margin-bottom: 25px;
+    transition: .3s all ease;
+  }
+.section .row .service-card .body .title
+  {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Baloo Paaji 2',cursive;
+    color: #695aa6;
+    transition: 2s all ease;
+
+
+}
+.section .row .service-card .body p.subtitle
+  {
+    position: absolute;
+    bottom: -100%;
+    transition: 2s all ease;
+  }
+.section .row .service-card:hover p.subtitle
+ {
+    top: 100%;
+}
+.section .row .service-card:hover .body img 
+{
+    margin-top: 5px;
+    width: 45px;
+    margin-bottom: 15px;
+}
+.section .row .portfolio-card
+{
+    flex: 0 0 30%;
+}
+.section .row .portfolio-card .main-card
+{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.section .row .portfolio-card .main-card img
+{
+    width: 100%;
+}
+.section .row .portfolio-card .main-card .portfolio-card-overlay
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-image: linear-gradient(to top,#e1dfed 0,rgba(225,223,237,.7) 99%,rgba(225,223,237,.8) 100%);
+    transition: all,.2s;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+.section .row .portfolio-card .main-card .portfolio-card-caption
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.section .row .portfolio-card .main-card:hover .portfolio-card-overlay
+{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+.section .price-wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Baloo Paaji 2',cursive;
+    text-align: center;
+
+
+}
+.section .price-wrapper .pricing-card
+{
+    display: block;
+    border: 1px solid #dee2e6;
+    padding: 30px 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    background: #fff;
+    transition: all,.3s;
+}
+.section .price-wrapper .pricing-card:hover
+{
+    transform: translate(0px ,-5px);
+}
+
+.section .price-wrapper .pricing-card-header .pricing-card-img 
+{
+    width: 70px;
+    margin-bottom: 25px;
+}
+.section .price-wrapper .pricing-card-body h6 
+{
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+    color: #695aa6;
+}
+.section .price-wrapper .pricing-card-body p 
+{
+
+    margin-bottom: 12px;
+    opacity: .6;
+}
+.section .price-wrapper .pricing-card-body p>i::before 
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d";
+    color: red;
+}
+.price-wrapper .pricing-card-footer 
+{
+    margin: 15px 0;
+    font-size: 33px;
+    font-weight: bolder;
+    opacity: .7;
+}
+.pricing-card-btn
+{
+    margin-top: 1rem;
+    padding: 6px 12px;
+}
+.section-pad
+{
+    padding: 40px 0 !important;
+    background: #695aa6!important;;
+}
+.section-pad .container .row .question
+{
+    flex: 1 1 0;
+    max-width: 100%;
+    margin-left: 8.3%;
+    color: #fff;
+}
+.section-pad .container .row .question h6
+{
+    font-family: 'Baloo Paaji 2',cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.section-pad .container .row .button
+   {
+      flex: 1 1 0;
+    margin-left: 25%;
+   }
+.quesbtn
+{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.quesbtn:hover
+{
+    color: #212529;
+    background-color: #e2e6ea;
+    border-color: #dae0e5;
+}
+.section .container .blog-card
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+.section .container .blog-card .blog-card-header
+{
+    max-width: 350px;
+}
+.section .container .blog-card .blog-card-body
+{
+    padding: 30px 20px 30px 30px;
+    font-family: 'Baloo Paaji',cursive;
+}
+.section .container .blog-card .blog-card-body h5
+{
+    color: #695aa6;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.section .container .blog-card .blog-card-body .blog-card-caption
+{
+    margin: 15px 0 15px!important;
+}
+.section .container .blog-card .blog-card-body .blog-card-caption a
+{
+    font-size: 14px;
+    margin-right: 10px;
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    opacity: .7;
+}
+.section .container .blog-card .blog-card-body .blog-card-caption .ti-heart::before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+    font-style: normal;
+    color: red;
+}
+.section .container .blog-card .blog-card-body .blog-card-caption .ti-comment::before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f075";
+    font-style: normal;
+    /* color: red; */
+}
+.section .container .blog-card .blog-card-body  p
+{
+    font-size: calc(13px + (15 - 13) * ((100vw - 300px)/ (1300 - 300)));
+    opacity: .7;
+    color: #111;
+    letter-spacing: .6px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.section .container .blog-card .blog-card-body .ti-right::before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f101";
+    font-style: normal;
+}
